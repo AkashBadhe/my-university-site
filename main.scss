@@ -1,0 +1,170 @@
+h1 {
+  font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container {
+  margin: 2em;
+}
+img {
+  margin: -19px 0 0 -24px;
+}
+img,
+.recreation {
+  float: left;
+}
+/* Global resets */
+$blue: #20a1d4;
+$green: #1cbc2c;
+$orange: #ef5f3c;
+$black: #424242;
+$grey: #777;
+$light-grey: #eaeaea;
+$white: #fff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+}
+p {
+  margin-bottom: 0px;
+}
+form {
+  font-family: Avenir-Book;
+  color: $black;
+  line-height: 1.4;
+}
+/* COLORS: 
+blue: #20A1D4;
+green: #1CBC2C;
+orange: #EF5F3C;
+black: #424242;
+grey: #777;
+light grey: #eaeaea;
+*/
+
+/* Your CSS goes here */
+/* Header Start */
+
+.tooltip-type {
+  position: relative;
+  width: 302px;
+  height: 50px;
+  text-align: center;
+  border-radius: 3px;
+  padding-top: 15px;
+  background-color: $black;
+  font-variant: slashed-zero;
+  font-weight: 100;
+  color: $white;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    margin-left: 5px;
+    border-width: 8px 5px 0 6px;
+    border-style: solid;
+    border-color: $black transparent transparent transparent;
+  }
+}
+/* Header End */
+/* article Start  */
+.donors {
+  margin-top: 10px;
+  height: 236px;
+  width: 302px;
+  border: 1px solid $light-grey;
+  box-shadow: 0px 1px 0px 0px $light-grey;
+  .progressbar {
+    height: 12px;
+    border-bottom: 1px solid $light-grey;
+    .progress-start {
+      width: 224px;
+      height: 12px;
+      background: $orange;
+    }
+  }
+}
+
+.dollar-content {
+  p {
+    padding: 14px 0px 0px 20px;
+    font-size: 15px;
+    width: 260px;
+    color: #8d8d8d;
+    font-weight: 100;
+    line-height: 20px;
+    span {
+      color: $orange;
+      font-weight: bold;
+    }
+  }
+  p:nth-last-child(1) {
+    color: $blue;
+    font-style: italic;
+    padding: 8px 0px 0px 20px;
+    cursor: pointer;
+  }
+}
+.dollar-input {
+  margin-top: 15px;
+  .dollar-value {
+    vertical-align: middle;
+    height: 50px;
+    width: 120px;
+    border: 1px solid $light-grey;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-right: 15px;
+    padding-left: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    &::-webkit-input-placeholder {
+      color: $black;
+    }
+  }
+
+  .btn-green {
+    vertical-align: middle;
+    width: 120px;
+    height: 50px;
+    font-size: 17px;
+    font-weight: 100;
+    color: $white;
+    background: $green;
+    border: 0px;
+  }
+}
+
+/* article end */
+
+/* Footer Start*/
+
+.btn {
+  font-weight: bold;
+  width: 140px;
+  height: 40px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 1px 2px $light-grey;
+  box-shadow: 1px 2px $light-grey;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-gray {
+  background: #fafafa;
+  color: $grey;
+  border: 1px solid #ddd;
+}
+
+.button-donor {
+  margin-top: 15px;
+}
+
+.mrm {
+  margin-right: 15px;
+}
+/* Footer End*/
